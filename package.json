@@ -1,11 +1,29 @@
 {
   "name": "compiled_app",
   "module": "src/app.ts",
-  "type": "module",
+  "version": "0.0.1",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "scripts": {
+    "build": "bun build ./src/app.ts --outfile ./out/task-cli --compile",
+    "start:add": "./out/task-cli add",
+    "start:update": "./out/task-cli update",
+    "start:delete": "./out/task-cli delete",
+    "start:list": "./out/task-cli list",
+    "start:mark-in-progress": "./out/task-cli mark-in-progress",
+    "start:mark-done": "./out/task-cli mark-done",
+    "start:mark-todo": "./out/task-cli mark-todo",
+    "add": "bun run ./src/app.ts add",
+    "update": "bun run ./src/app.ts update",
+    "delete": "bun run ./src/app.ts delete",
+    "list": "bun run ./src/app.ts list",
+    "mark-in-progress": "bun run ./src/app.ts mark-in-progress",
+    "mark-done": "bun run ./src/app.ts mark-done",
+    "mark-todo": "bun run ./src/app.ts mark-todo"
+  },
+  "type": "module"
 }
