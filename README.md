@@ -1,7 +1,7 @@
 # task-cli
 
 ## Description
-This is a ready-to-use task management application accessible via the command line/terminal. The project is developed using TypeScript and Bun and was created as a project for the [roadmap.sh](https://roadmap.sh) website.
+This is a ready-to-use task management application accessible via the command line/terminal. The project is developed using TypeScript and Bun and was created as a project for the [roadmap.sh](https://roadmap.sh/projects/task-tracker) website.
 
 ## Project Structure
 The project consists of the following structure:
