@@ -15,20 +15,3 @@ export type CommandAction =
   | "mark-in-progress"
   | "mark-done"
   | "mark-todo";
-
-export type AddArgs = { description: string };
-export type UpdateArgs = { id: number; description: string };
-export type DeleteArgs = { id: number };
-export type ListArgs = { status?: string };
-export type MarkInProgressArgs = { id: number };
-export type MarkDoneArgs = { id: number };
-export type MarkTodoArgs = { id: number };
-
-export type CommandArgs =
-  | AddArgs
-  | UpdateArgs
-  | DeleteArgs
-  | ListArgs
-  | MarkInProgressArgs
-  | MarkDoneArgs
-  | MarkTodoArgs;
